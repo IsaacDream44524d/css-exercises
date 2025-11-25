@@ -8,9 +8,10 @@ body {
   font-weight: 800;
 }
 
-.small-para {
+.small-para.small-para {
+  /*added .small-para to specify which element*/
   font-size: 14px;
-  font-weight: 800;
+/*removed the font-weight because it alread declared in the code 8*/
 }
 
 .para {
@@ -24,18 +25,23 @@ body {
 } 
 
 .button {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.child {
+.button.cancel {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  /* removed font-size added it to a shared element .button*/
+}
+
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
 }
 
-div.text {
+.text {
+  /* make this less specific to be surpassed by the */
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
