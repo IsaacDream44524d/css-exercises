@@ -1,1 +1,28 @@
-/* Add CSS Styling */
+
+.clickme {
+    background-color: black;
+    color: white;
+
+}
+
+.clickhere {
+    background-color: yellow;
+}
+
+.clickme, .clickhere {
+    border-radius: 5px;
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif;
+}
+
+.clickme:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.clickhere:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
